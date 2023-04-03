@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">EducationalApp</string>
+
+    <!-- Login -->
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+
+    <!-- Main -->
+    <string name="car_info">Car Info</string>
+    <string name="repair_maintenance">Repair &amp; maintenance</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="sort">Sort</string>
+    <string name="home">Home</string>
+    <string name="comments">Comments:</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+
+    <!-- Car info -->
+    <string name="mileage">mileage</string>
+    <string name="car_number">Car number</string>
+    <string name="vin">VIN</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="model">Model</string>
+    <string name="year">Year</string>
+    <string name="body_style">Body style</string>
+    <string name="transmission">Transmission</string>
+    <string name="fuel">Fuel</string>
+    <string name="engine_type">Engine type</string>
+    <string name="rim_size">Rim size</string>
+    <string name="section_width">Section Width</string>
+    <string name="tyre_aspect_ratio">Tyre Aspect Ratio</string>
+</resources>

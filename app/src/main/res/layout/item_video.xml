@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videoItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:paddingStart="@dimen/base_small_x3"
+    android:paddingTop="@dimen/base_small_x5"
+    android:paddingEnd="@dimen/base_small_x3"
+    android:paddingBottom="@dimen/base_small_x5">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/image_medium"
+        android:layout_height="@dimen/image_medium"
+        android:src="@drawable/ic_video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/likedImageView"
+        android:layout_width="@dimen/image_small_x6"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/base"
+        android:src="@drawable/ic_like"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dislikedImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/likedTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/likedImageView"
+        app:layout_constraintStart_toStartOf="@id/likedImageView"
+        app:layout_constraintEnd_toEndOf="@id/likedImageView"
+        android:textSize="@dimen/text_medium"
+        android:textAlignment="center"
+        tools:text="12M"/>
+
+    <ImageView
+        android:id="@+id/dislikedImageView"
+        android:layout_width="@dimen/image_small_x6"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_dislike"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dislikedTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dislikedImageView"
+        app:layout_constraintStart_toStartOf="@id/dislikedImageView"
+        app:layout_constraintEnd_toEndOf="@id/dislikedImageView"
+        android:textSize="@dimen/text_medium"
+        android:textAlignment="center"
+        tools:text="1.4K"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

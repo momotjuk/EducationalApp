@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EducationalApp</string>
+    <string name="user_name">Ім’я користувача</string>
+    <string name="password">Пароль</string>
+    <string name="login">Логін</string>
+    <string name="sign_out">Вихід</string>
+    <string name="sign_up">Реєстрація</string>
+    <string name="sign_in_with_google">Вхід за допомогою Google</string>
+    <string name="car_info">Інформація про авто</string>
+    <string name="repair_maintenance">Ремонт та ТО</string>
+    <string name="search">Пошук</string>
+    <string name="sort">Сортування</string>
+    <string name="settings">Налаштування</string>
+    <string name="about">Про нас</string>
+</resources>

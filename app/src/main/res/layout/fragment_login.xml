@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:orientation="vertical"
+    tools:context=".features.login.presentation.LoginFragment">
+
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="@dimen/image_small_x2"
+        android:layout_height="@dimen/image_small_x2"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/base"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/base_large_x6"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="?colorOnBackground"
+        android:textSize="@dimen/text_large_x6" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"
+        android:paddingHorizontal="@dimen/base"
+        android:textAlignment="center"
+        android:textColor="?colorPrimary"
+        android:textColorHint="?colorSecondary"
+        app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_profile"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:paddingHorizontal="@dimen/base"
+        android:textAlignment="center"
+        android:textColor="?colorPrimary"
+        android:textColorHint="?colorSecondary"
+        app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_key"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/base">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/base_large_x3"
+            android:layout_weight="1"
+            android:text="@string/login"
+            android:textSize="@dimen/text_large_x3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signUpButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/base_large_x3"
+            android:layout_weight="1"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_large_x3" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginWithGoogleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/base_large_x2"
+        app:cardElevation="@dimen/base_large_x5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:paddingVertical="@dimen/base_small_x3"
+            android:paddingHorizontal="@dimen/base">
+
+            <ImageView
+                android:layout_width="@dimen/icon_normal"
+                android:layout_height="@dimen/icon_normal"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/base_small_x2"
+                android:src="@drawable/googleg_standard_color_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sign_in_with_google"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large_x2" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
